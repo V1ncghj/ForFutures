@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice"><defs>
+<radialGradient id="caveg" cx=".5" cy=".45" r=".7"><stop stop-color="#26372d"/><stop offset=".48" stop-color="#111a14"/><stop offset="1" stop-color="#080a08"/></radialGradient>
+<radialGradient id="lamp"><stop stop-color="#e9c46a" stop-opacity=".35"/><stop offset="1" stop-color="#e9c46a" stop-opacity="0"/></radialGradient>
+<filter id="vgrain"><feTurbulence baseFrequency=".55" numOctaves="3"/><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .14 0"/></filter></defs>
+<rect width="1600" height="900" fill="url(#caveg)"/><ellipse cx="810" cy="590" rx="430" ry="340" fill="url(#lamp)"/>
+<path d="M0 0H1600V120 L1510 90 1450 270 1390 120 1300 310 1220 110 1110 180 1040 380 960 110 880 220 810 95 730 330 660 100 580 210 510 80 430 290 360 105 270 190 180 90 110 280 60 110 0 170Z" fill="#070908"/>
+<path d="M0 900V730 L110 760 190 620 250 790 340 740 410 850 520 800 620 900ZM1600 900V690 L1490 740 1400 610 1340 810 1240 760 1170 900Z" fill="#070908"/>
+<g fill="none" stroke="#0a0d0a" stroke-linecap="round"><path d="M140 0Q170 170 100 310T160 570" stroke-width="24"/><path d="M1400 0Q1330 140 1430 290T1370 600" stroke-width="28"/><path d="M280 0Q350 110 310 220T360 390" stroke-width="15"/><path d="M1220 0Q1160 100 1200 240T1150 420" stroke-width="17"/></g>
+<g transform="translate(800 660)"><path d="M-190 150 Q-160 20 0-15 Q160 20 190 150Z" fill="#11150f"/><path d="M-75 105 Q-65 10 0 0 Q65 10 75 105 L52 145H-52Z" fill="#e9e4dc" opacity=".8"/><ellipse cx="-29" cy="65" rx="20" ry="25" fill="#11150f"/><ellipse cx="29" cy="65" rx="20" ry="25" fill="#11150f"/><path d="M0 82L-11 105H11Z M-38 122H38M-22 113V139M0 113V143M22 113V139" fill="#11150f" stroke="#11150f" stroke-width="6"/>
+<g stroke="#e9e4dc" stroke-width="14" stroke-linecap="round" opacity=".72"><path d="M-180 130L-90 30M-180 30L-90 130M95 135L175 45M105 40L185 140"/></g></g>
+<path d="M0 850 Q280 810 510 860 T1000 840 T1600 820 V900H0Z" fill="#070908"/><rect width="1600" height="900" filter="url(#vgrain)" opacity=".35"/></svg>

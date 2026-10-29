@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0f0c">
+  <meta name="description" content="Лес Страха — место где-то в Сибири, где тропы исчезают, а из темноты отвечают на зов. Только 18+.">
+  <title>Лес Страха — место, которого нет на картах</title>
+  <link rel="icon" href="./assets/art/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./assets/fonts/cormorant-600.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="./assets/fonts/golos-400.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#top" aria-label="Лес Страха — наверх">
+      <svg class="brand__mark" viewBox="0 0 34 42" aria-hidden="true">
+        <path d="M17 1 5 17h6L2 30h11v10h8V30h11L23 17h6Z" fill="currentColor"/>
+        <path d="M13 24h8" stroke="var(--p-blood)" stroke-width="2"/>
+      </svg>
+      <span>ЛЕС<br>СТРАХА</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <a href="#about">О лесе</a>
+      <a href="#route">Маршрут</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="header-ticket" href="#tickets">Билеты <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" id="menu-open" type="button" aria-label="Открыть меню" aria-controls="mobile-menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Меню" hidden>
+    <button class="mobile-menu__close" id="menu-close" type="button" aria-label="Закрыть меню">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg>
+    </button>
+    <nav aria-label="Мобильная навигация">
+      <a href="#about">О лесе</a>
+      <a href="#route">Маршрут</a>
+      <a href="#tickets">Билеты</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <p>Пт–Вс · 19:00–00:00 · 18+</p>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__scene" aria-hidden="true">
+        <img src="./assets/art/forest.svg" alt="" fetchpriority="high">
+        <div class="hero__fog hero__fog--one"></div>
+        <div class="hero__fog hero__fog--two"></div>
+        <div class="hero__vignette"></div>
+      </div>
+      <div class="hero__content shell">
+        <p class="hero__kicker">Место, которого нет на картах <span>18+</span></p>
+        <h1 class="hero__title" id="hero-title"><span>ЛЕС</span><span class="hero__title-fear">СТРАХА</span></h1>
+        <div class="hero__bottom">
+          <p class="hero__lead">Здесь деревья помнят каждого,<br>кто вошёл без разрешения.</p>
+          <a class="button button--blood" href="#tickets">Войти в лес <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+          <div class="hero__session"><span>Вход открыт</span><strong>ПТ · 19:00</strong></div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="manifest section" id="about" aria-labelledby="about-title">
+      <div class="shell manifest__grid">
+        <p class="section-label">То, что ждёт внутри</p>
+        <h2 id="about-title">Этот лес не хочет,<br>чтобы вы <em>вышли.</em></h2>
+        <div class="manifest__copy">
+          <p>«Лес Страха» не отмечен на картах. Местные жители обходят его стороной: говорят, что после заката деревья смещаются, а с тропы доносятся голоса тех, кого вы давно потеряли.</p>
+          <p>Здесь видели силуэты выше деревьев и следы, которые обрываются у закрытых дверей. Свет фонаря не спасает — он лишь показывает, насколько близко они подошли.</p>
+        </div>
+        <dl class="manifest__stats">
+          <div><dt>75</dt><dd>минут до полной<br>темноты</dd></div>
+          <div><dt>2 км</dt><dd>до старой<br>усадьбы</dd></div>
+          <div><dt>7</dt><dd>вещей найдено<br>без хозяев</dd></div>
+          <div><dt>18+</dt><dd>детям вход<br>запрещён</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="route section" id="route" aria-labelledby="route-title">
+      <div class="shell route__intro">
+        <p class="section-label">Три места внутри</p>
+        <h2 id="route-title">Чем глубже —<br>тем <em>меньше</em> света.</h2>
+        <p>По записям местных и найденным дневникам удалось восстановить три места. За каждым из них тропа заканчивается — и начинается что-то другое.</p>
+      </div>
+
+      <article class="chapter chapter--trail shell">
+        <div class="chapter__index" aria-hidden="true">I</div>
+        <div class="chapter__body">
+          <p class="chapter__overline">Опушка · Последняя тропа</p>
+          <h3>Тропа</h3>
+          <p>Сначала слышен только ветер. Потом шаги начинают повторять ваши — с задержкой в один удар. На стволах висят красные ленты. Местные говорят, что это метки тех, кто пытался выйти. Если лента снята, возвращаться уже поздно.</p>
+          <ul class="chapter__details"><li>Следы без конца</li><li>Голоса за спиной</li><li>Красные ленты</li></ul>
+        </div>
+        <div class="trail-sign" aria-hidden="true"><span>НЕ<br>СВОРАЧИВАТЬ</span><i></i></div>
+      </article>
+
+      <article class="chapter chapter--cabin">
+        <div class="chapter__art">
+          <img src="./assets/art/cabin.svg" alt="Силуэт заброшенной хижины со светящимися окнами среди ночного леса" loading="lazy">
+          <span class="art-caption">Дом лесника · 52°13′ N</span>
+        </div>
+        <div class="chapter__body">
+          <p class="chapter__overline">Усадьба · Дом лесника</p>
+          <h3>Хижина</h3>
+          <p>В доме до сих пор тепло, пахнет воском и сушёными травами. На столе стоят чашки, хотя усадьба пустует десятилетиями. По ночам из-за стены называют имена вошедших. Местные предупреждают: если хозяйка предложит укрыться до рассвета, не садитесь за стол.</p>
+          <ul class="chapter__details"><li>Голоса за стеной</li><li>Комната без окон</li><li>Чьи-то вещи</li></ul>
+        </div>
+      </article>
+
+      <article class="chapter chapter--underground">
+        <img class="underground__art" src="./assets/art/underground.svg" alt="Тёмная пещера с корнями, сталактитами и человеческими костями" loading="lazy">
+        <div class="underground__shade" aria-hidden="true"></div>
+        <div class="chapter__body shell">
+          <p class="chapter__overline">Ниже корней · Самое глубокое место</p>
+          <h3>Подземелье</h3>
+          <p>Корни держат не только деревья. Под усадьбой найдены комнаты, которых нет на планах. Судя по царапинам на дверях, кто-то пытался выбраться. Фонарь там гаснет, а после каждого шага из темноты отвечает второй.</p>
+          <a class="text-link" href="#tickets">Выбрать ночь <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+    </section>
+
+
+
+    <section class="tickets section" id="tickets" aria-labelledby="tickets-title">
+      <div class="shell">
+        <div class="tickets__head">
+          <div><p class="section-label">Ночи пт–вс · 19:00–00:00</p><h2 id="tickets-title">Выберите<br>свою <em>ночь.</em></h2></div>
+          <p>Входят группы до 10 человек. На опушке выдают один фонарь. Дальше связь почти не работает. Бронь держим 24 часа.</p>
+        </div>
+        <div class="ticket-list">
+          <article class="ticket-row">
+            <div class="ticket-row__name"><span>Базовый уровень</span><h3>Тропа</h3></div>
+            <p>Путь до хижины и обратно, один фонарь на группу. Не сходите с отмеченной тропы после заката.</p>
+            <div class="ticket-row__price"><strong>2 900 ₽</strong><span>за человека</span></div>
+            <button class="button button--outline ticket-select" type="button" data-ticket="trail" disabled>Выбрать <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="ticket-row ticket-row--intense">
+            <div class="ticket-row__name"><span>Максимум адреналина</span><h3>Полная тьма</h3></div>
+            <p>Спуск под корни без личного фонаря. Только для тех, кто готов идти на звук и не оборачиваться.</p>
+            <div class="ticket-row__price"><strong>3 900 ₽</strong><span>за человека</span></div>
+            <button class="button button--blood ticket-select" type="button" data-ticket="darkness" disabled>Выбрать <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="ticket-row">
+            <div class="ticket-row__name"><span>Только ваши люди</span><h3>Своя группа</h3></div>
+            <p>Закрытая ночь для компании до 6 человек. Других групп в лесу не будет. По крайней мере, людей.</p>
+            <div class="ticket-row__price"><strong>14 900 ₽</strong><span>за ночь</span></div>
+            <button class="button button--outline ticket-select" type="button" data-ticket="private" disabled>Выбрать <span aria-hidden="true">↗</span></button>
+          </article>
+        </div>
+        <p class="tickets__note">Перед оплатой мы свяжемся с вами и подтвердим наличие мест. Отмена брони — бесплатно за 48 часов.</p>
+      </div>
+    </section>
+
+    <section class="contacts section" id="contacts" aria-labelledby="contacts-title">
+      <div class="contacts__trees" aria-hidden="true"></div>
+      <div class="shell contacts__inner">
+        <p class="section-label">Точка входа</p>
+        <h2 id="contacts-title">До встречи<br><em>в темноте.</em></h2>
+        <div class="contacts__grid">
+          <div class="contact-block"><span>Где</span><p>Где-то в Сибири,<br>за старой трактовой дорогой.<br>Координаты — после брони.</p></div>
+          <div class="contact-block"><span>Когда</span><p>Пятница–воскресенье<br>19:00–00:00<br>Сбор за 30 минут</p></div>
+          <div class="contact-block"><span>Связаться</span><p>+7 925 513-35-66<br>rodin.niki@gmail.com</p></div>
+        </div>
+        <footer class="site-footer">
+          <a class="brand brand--footer" href="#top" aria-label="Лес Страха — наверх"><span>ЛЕС<br>СТРАХА</span></a>
+          <p>Вы уже в списке тех,<br>кто дошёл до конца.</p>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
